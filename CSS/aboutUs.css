@@ -98,6 +98,9 @@ body {
   margin-bottom: 5px;
   transition: all 0.2s ease-in;
   text-align: center;
+  /* pandu */
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .card {
@@ -223,6 +226,22 @@ body {
 .deskripsi {
   margin: 0;
   font-size: 1em;
+}
+
+.deskripsi.fath{
+  font-size: 0.8em;
+}
+
+.deskripsi.pandu{
+  font-size: 0.8em;
+}
+
+.deskripsi.raken{
+  font-size: 0.8em;
+}
+
+.deskripsi.abi{
+  font-size: 0.8em;
 }
 
 .kartu:hover .overlay {

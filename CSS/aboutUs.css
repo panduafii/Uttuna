@@ -1,0 +1,239 @@
+/* Your existing CSS code */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+.containerB {
+  background-color: black;
+}
+.about3 {
+  background-color: black;
+}
+element.card-body {
+  background-color: black;
+  color: rgb(18, 18, 18);
+}
+body {
+  overflow-y: auto;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* .jumbotron {
+  width: 100%;
+  height: 75vh;
+  background-image: url(/img/gbr3.jpg);
+  background-size: cover;
+  display: flex;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-bottom: 1px;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 7em;
+  color: white;
+  margin-left: 80px;
+  margin-bottom: 5px;
+  transition: all 0.2s ease-in;
+}
+
+.name:hover {
+  color: white;
+  text-shadow: 0 0px 50px #ffffff;
+  transition: all 0.5s ease-in;
+}
+
+.desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5em;
+  color: white;
+  margin-left: 80px;
+  margin-bottom: 5px;
+}
+
+.jobdesc {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 7rem;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+} */
+
+.project {
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* custom */
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.project h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 5px;
+  transition: all 0.2s ease-in;
+  text-align: center;
+}
+
+.card {
+  background-color: black;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.8s;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+/* .card-group {
+  background-color: black;
+  color: black;
+} */
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+}
+
+.card img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.profile {
+  height: 15vh;
+  background-color: black;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 30px;
+  transition: all 0.2s ease-in;
+  text-align: center;
+}
+
+.card-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.slide-container {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-content {
+  width: 25%;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.card-wrapper {
+  width: 100%;
+  float: left;
+}
+
+.kartu {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-content {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-cont {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 50px;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+}
+
+.nama {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.deskripsi {
+  margin: 0;
+  font-size: 1em;
+}
+
+.kartu:hover .overlay {
+  opacity: 1;
+}
+
+.kartu:hover .card-cont {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .kartu:hover .card-cont {
+    display: none;
+  }
+}

@@ -149,7 +149,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid rgb(169, 166, 166);
+  border: rgb(169, 166, 166);
   transition: 0.5s;
 }
 .buttons button:hover {

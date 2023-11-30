@@ -1,0 +1,24 @@
+body{
+    background-color: aqua;
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% tinggi viewport (layar) */
+    margin: 0;
+}
+.badan{
+    position: relative;
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.badan input{
+    margin: 10px;
+}
+.badan button{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button id="showPopupBtn">Show Popup</button>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup" id="myPopup">
+        <div class="popup-content">
+            <span class="close" id="closePopupBtn">&times;</span>
+            <img class="gambar1" src="/gambar/money-card.png" alt="">
+            <h1>Pilih Metode Pembayaran </h1>
+            <form action="">
+                <label for="kk">
+                    <input type="radio" name="p" id="kk">
+                    kartu kredit/debit
+                    <img src="/gambar/atm-card.png" alt="">
+                </label>
+                
+                <label for="kd">
+                    <input type="radio" name="p" id="kd">
+                    transfer bank
+                    <img src="/gambar/bank.png" alt="">
+                </label><br>
+                
+                <label for="d">
+                    <input type="radio" name="p" id="d">
+                    e-money
+                    <img src="/gambar/e-money.png" alt="">
+                </label><br>
+                <input class="nomor" type="text" placeholder="nomor"><br>
+                <input class="sandi" type="text" placeholder="sandi"><br>
+                <label class="gambarjumlah" for="jumlah"><img src="/gambar/group.png" alt=""></label>
+                <select class="jumlahorang" id="jumlah">
+                    <option value="1">1 orang</option>
+                    <option value="2">2 orang</option>
+                    <option value="3">3 orang</option>
+                    <option value="4">4 orang</option>
+                    <option value="5">5 orang</option>
+                    <option value="6">6 orang</option>
+                    <option value="7">7 orang</option>
+                    <option value="8">8 orang</option>
+                    <option value="9">9 orang</option>
+                    <option value="10">10 orang</option>
+                </select>
+                <span class="harga"><b>Rp5.000.000</b></span>
+                <button class="tombol"><b>bayar</b> <img src="/gambar/payment.png" alt=""></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,105 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/CSS/login1.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;800;900&display=swap" rel="stylesheet">
-    
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="stylesheet" href="/CSS/login1.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <!-- LOGIN -->
     <div class="wrapper">
-        <div class="form-box login">
-            <h2>Login</h2>
-            <!-- Form -->
-            <form action="#">
+      <div class="form-box login">
+        <h2>Login</h2>
+        <!-- Form -->
+        <form action="#">
+          <!-- Input Form -->
+          <!-- Username -->
+          <div class="input-box">
+            <span class="icon"><ion-icon name="people"></ion-icon></span>
+            <input type="text" required />
+            <label for="username">Username</label>
+          </div>
+          <!-- Password -->
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="Password" required />
+            <label for="Password">Password</label>
+          </div>
 
-            <!-- Input Form -->
-                <!-- Username -->
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="people"></ion-icon></span>
-                    <input type="text" required>
-                    <label for="username">Username</label> 
-                </div>
-                <!-- Password -->
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="Password" required>
-                    <label for="Password">Password</label>
-                </div>
+          <!-- Submit Button -->
+          <button type="submit" class="button">Sign In</button>
 
-                <!-- Submit Button -->
-                <button type="submit" class="button">Sign In</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?<a href="#" class="register-link">
+                Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
 
-                <div class="login-register">
-                <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
-                </div>
+      <!-- REGISTER -->
+      <div class="form-box register">
+        <h2>Register</h2>
+        <!-- Form -->
+        <form class="formDalam" action="#">
+          <!-- Input Form -->
+          <!-- Username -->
+          <div class="input-box">
+            <span class="icon"><ion-icon name="people"></ion-icon></span>
+            <input type="text" required />
+            <label for="username">Username</label>
+          </div>
+          <!-- Phone -->
+          <div class="input-box">
+            <span class="icon"><ion-icon name="call"></ion-icon></span>
+            <input type="phone" required />
+            <label for="phone">Phone Number</label>
+          </div>
+          <!-- Email -->
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label for="email">Email</label>
+          </div>
+          <!-- Password -->
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="Password" required />
+            <label for="Password">Password</label>
+          </div>
 
-            </form>
-        </div>
+          <!-- Submit Button -->
+          <button type="submit" class="button">Register</button>
 
-        <!-- REGISTER -->
-        <div class="form-box register">
-            <h2>Register</h2>
-            <!-- Form -->
-            <form class="formDalam" action="#">
-    
-            <!-- Input Form -->
-                <!-- Username -->
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="people"></ion-icon></span>
-                    <input type="text" required>
-                    <label for="username">Username</label> 
-                    </div>
-                <!-- Phone -->
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="call"></ion-icon></span>
-                    <input type="phone" required>
-                    <label for="phone">Phone Number</label> 
-                </div>
-                <!-- Email -->
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label for="email">Email</label> 
-                </div>
-                <!-- Password -->
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="Password" required>
-                    <label for="Password">Password</label>
-                </div>
-    
-                <!-- Submit Button -->
-                <button type="submit" class="button">Register</button>
-    
-                <div class="login-register">
-                <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
-                </div>
-    
-            </form>
-        </div>
+          <div class="login-register">
+            <p>
+              Already have an account?<a href="#" class="login-link"> Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
-
 
     <!-- import js -->
     <script src="/js/script.js"></script>
     <!-- Import Icon -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+  <script></script>
 </html>

@@ -133,12 +133,26 @@ header .nav-bar {
 }
 
 .nav-bar .logo img {
-  height: 100px;
+  height: 70px;
+}
+
+.nav-bar .navigation .nav-items .loginHeader {
+  background-color: #ffffffe2;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 30px;
+  border-radius: 5px;
+}
+.nav-bar .navigation .nav-items .loginHeader:hover {
+  color: orangered;
 }
 
 .nav-bar .logo {
   color: var(--dark-color);
-  font-size: 1.8em;
+  font--size: 1.8em;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -156,6 +170,9 @@ header .nav-bar {
   transform: translateY(0);
   transition: 0.3s ease;
 }
+.navigation .nav-items .loginHeader uil uil-user {
+  display: block;
+}
 
 .navigation .nav-items a:hover {
   color: rgba(234, 124, 13, 0.898);
@@ -170,7 +187,7 @@ header .nav-bar {
 }
 
 .navigation .nav-items a:not(:last-child) {
-  margin-right: 45px;
+  margin-right: 25px;
 }
 
 /* ==== Home ==== */
@@ -484,6 +501,10 @@ header .nav-bar {
     font-size: 0.7em;
     margin: 20px 35px;
     transition: 0.3s ease;
+  }
+
+  .nav-bar .navigation .nav-items .loginHeader {
+    padding-left: 0px;
   }
 
   .navigation .nav-items a:hover {

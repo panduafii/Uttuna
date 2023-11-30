@@ -152,7 +152,7 @@ header .nav-bar {
 
 .nav-bar .logo {
   color: var(--dark-color);
-  font--size: 1.8em;
+  font-size: 1.8em;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -403,13 +403,77 @@ header .nav-bar {
   /* scroll-snap-align: start; */
 }
 
+.about .cont-about{
+margin-top: 30px;
+display: inline-flex;
+}
+
+.about .cont-about.bawah{
+  margin-top: 50px;
+  display: inline-flex;
+  }
+
+.about .cont-about .petaNatuna{
+  background-color: #fff;
+  height: auto;
+  width: 270px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.614);
+}
+
+.about .cont-about .gambarAbout {
+  background-color: rgb(0, 37, 107);
+  height: auto; /* Tinggi latar belakang */
+  width: 270px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.614);
+  background-size: 100% 80%; /* Ukuran latar belakang (tinggi x lebar) */
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden; /* Mengatasi masalah overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.about .cont-about .gambarAbout img {
+  height: 200px; /* Tinggi gambar di dalam latar belakang */
+  width: auto;
+  display: block; /* Mengatasi margin bawah pada elemen img */
+  margin: 0 auto; /* Posisi gambar di tengah */
+}
+
+
+.about .cont-about p br {
+  display: block; /* Memastikan <br> dianggap sebagai elemen blok */
+  content: ""; /* Menambahkan konten kosong */
+  margin-bottom: 15px; /* Menambah spasi setelah tag <br> */
+}
+
+
+
 .about h2 {
-  font-size: 3em;
+
   font-weight: 600;
 }
 
-.about p {
+.about span {
   margin: 25px 0;
+}
+
+.about h2 {
+  margin-left: 1px;
+  font-size: 3.1em;
+}
+
+.about span {
+  font-weight: 320;
+  font-size: 0.9em;
+  width: 70%;
+  margin-left: 30px;
+  white-space: pre-wrap;
 }
 
 /* ==== Media queries (max-width: 1100px) ==== */
@@ -721,11 +785,5 @@ header .nav-bar {
 
 /* ==== About section ==== */
 
-.about h2 {
-  font-size: 2.5em;
-}
 
-.about p {
-  font-size: 0.9em;
-}
 /* swiper image */

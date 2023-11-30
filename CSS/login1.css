@@ -13,6 +13,9 @@ header {
     justify-content: center;
     transition: 1.5s ease;
     transition-property: height, background;
+    /* custom */
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
   }
   
   header.sticky {
@@ -59,8 +62,8 @@ header {
   }
   
   .nav-bar .logo {
-    color: var(--dark-color);
-    font--size: 1.8em;
+    color: black;
+    font-size: 1.8em;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -70,7 +73,7 @@ header {
   
   /* ubah di media queries menjadi putih */
   .navigation .nav-items a {
-    color: var(--white-color);
+    color: white;
     font-size: 1em;
     text-decoration: none;
     text-shadow: var(--text-shadow);

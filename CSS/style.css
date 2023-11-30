@@ -23,9 +23,13 @@ html{
   /* custom angka akhir dari 30% */
   --box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363);
 
-  --scroll-bar-color: #fff;
+  /* --scroll-bar-color: #fff;
   --scroll-thumb-color: #282f4e;
-  --scroll-thumb-hover-color: #454f6b;
+  --scroll-thumb-hover-color: #454f6b; */
+
+  --scroll-bar-color: rgb(80, 80, 80);
+  --scroll-thumb-color: #121212;
+  --scroll-thumb-hover-color: #000000;
 }
 
 /* ==== Scroll bar ==== */
@@ -154,7 +158,7 @@ header .nav-bar {
 }
 
 .navigation .nav-items a:hover {
-  color: rgba(13, 112, 234, 0.898);
+  color: rgba(234, 124, 13, 0.898);
   /* tidak bisa */
   transform: translateX(2px);
   text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
@@ -185,7 +189,7 @@ header .nav-bar {
   height: 50px;
   bottom: 0;
   left: 0;
-  background: linear-gradient(transparent, var(--section-bg-color));
+  background: linear-gradient(transparent, black);
 }
 
 /* ==== Background slider ==== */
@@ -378,6 +382,7 @@ header .nav-bar {
 /* custom */
 .about {
   height: 100vh;
+  background-color: black;
   /* scroll-snap-align: start; */
 }
 
@@ -398,7 +403,8 @@ header .nav-bar {
 
   .section {
     color: var(--white-color);
-    background: var(--section-bg-color);
+    /* dimodif */
+    background: var(black);
     padding: 25px 50px;
     transition: 0.3s ease;
   }

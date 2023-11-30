@@ -1,7 +1,103 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-
+/* header by pandu */
+header {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: calc(5rem + 1rem);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: 1.5s ease;
+    transition-property: height, background;
+  }
+  
+  header.sticky {
+    height: calc(2.5rem + 1rem);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  header .nav-bar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+    transition: 0.3s ease;
+  }
+  /* ubah di media queries menjadi ada */
+  .nav-close-btn {
+    display: none;
+  }
+  
+  .nav-menu-btn {
+    display: none;
+  }
+  
+  .nav-bar .logo img {
+    height: 70px;
+  }
+  
+  .nav-bar .navigation .nav-items .loginHeader {
+    background-color: #ffffffe2;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 30px;
+    border-radius: 5px;
+  }
+  .nav-bar .navigation .nav-items .loginHeader:hover {
+    color: orangered;
+  }
+  
+  .nav-bar .logo {
+    color: var(--dark-color);
+    font--size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: var(--text-shadow);
+  }
+  
+  /* ubah di media queries menjadi putih */
+  .navigation .nav-items a {
+    color: var(--white-color);
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: var(--text-shadow);
+    cursor: pointer;
+    transform: translateY(0);
+    transition: 0.3s ease;
+  }
+  .navigation .nav-items .loginHeader uil uil-user {
+    display: block;
+  }
+  
+  .navigation .nav-items a:hover {
+    color: rgba(234, 124, 13, 0.898);
+    /* tidak bisa */
+    transform: translateX(2px);
+    text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease; /* Tambahkan 's' setelah 0.3 */
+  }
+  
+  .navigation .nav-items a i {
+    display: none;
+  }
+  
+  .navigation .nav-items a:not(:last-child) {
+    margin-right: 25px;
+  }
+/* ===== */
 body {
     display: flex;
     justify-content: center;

@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Roboto:wght@100;300&family=Vollkorn:wght@400;600&display=swap");
+
 .containerB {
   background-color: black;
 }
@@ -19,7 +21,7 @@ element.card-body {
 body {
   overflow-y: auto;
   background-color: black;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -228,19 +230,19 @@ body {
   font-size: 1em;
 }
 
-.deskripsi.fath{
+.deskripsi.fath {
   font-size: 0.8em;
 }
 
-.deskripsi.pandu{
+.deskripsi.pandu {
   font-size: 0.8em;
 }
 
-.deskripsi.raken{
+.deskripsi.raken {
   font-size: 0.8em;
 }
 
-.deskripsi.abi{
+.deskripsi.abi {
   font-size: 0.8em;
 }
 

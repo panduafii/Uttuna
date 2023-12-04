@@ -21,19 +21,42 @@
     />
 </head>
 <body>
+  <?php
+    session_start();
+  
+    // Cek apakah session user_id dan username telah diset
+    if (isset($_SESSION["user_id"]) || isset($_SESSION["username"])) {
+      // Jika tidak, redirect ke halaman login
+      // Informasi pengguna yang telah login
+      $user_id = $_SESSION["user_id"];
+      $username = $_SESSION["username"];
+      // header("Location: Login1.php");
+      // exit();
+    }
+  ?>
     <div class="kepala1">
       <!-- header by pandu -->
       <header>
         <div class="nav-bar">
-          <a href="index.html" class="logo"><img src="./img/logo4.png" /></a>
+          <a href="index.php" class="logo"><img src="./img/logo4.png" /></a>
           <div class="navigation">
             <div class="nav-items">
               <i class="uil uil-times nav-close-btn"></i>
-              <a href="index.html"><i class="uil uil-home"></i>Home</a>
-              <a href="index.html"><i class="uil uil-compass"></i>Destination</a>
-              <a href="paket.html"><i class="uil uil-document-layout-left"></i>Explore</a>
-              <a href="index.html"><i class="uil uil-info-circle"></i>About Us</a>
-              <a class="loginHeader" href="Login1.html"><i class="uil uil-user"></i>Login</a>
+              <a href="index.php"><i class="uil uil-home"></i>Home</a>
+              <a href="index.php"><i class="uil uil-compass"></i>Destination</a>
+              <a href="paket.php"><i class="uil uil-document-layout-left"></i>Explore</a>
+              <a href="index.php"><i class="uil uil-info-circle"></i>About Us</a>
+              <?php
+              // Cek apakah pengguna sudah login
+              if (isset($_SESSION['username'])) {
+                // Jika sudah login, tampilkan tautan ke profil dan logout
+                echo '<a href="profile.php"><i class="uil uil-user"></i>Profile</a>';
+                echo '<a href="fungsiPHP/check-logout.php"><i class="uil uil-sign-out-alt"></i></i>Logout</a>';
+              } else {
+                // Jika belum login, tampilkan tautan ke halaman login
+                 echo '<a class="loginHeader" href="Login1.php"><i class="uil uil-user"></i>Login</a>';
+              }
+              ?>
             </div>
           </div>
           <i class="uil uil-apps nav-menu-btn"></i>

@@ -20,7 +20,19 @@
     
 </head>
 <body>
-    
+<?php
+    session_start();
+  
+    // Cek apakah session user_id dan username telah diset
+    if (isset($_SESSION["user_id"]) || isset($_SESSION["username"])) {
+      // Jika tidak, redirect ke halaman login
+      // Informasi pengguna yang telah login
+      $user_id = $_SESSION["user_id"];
+      $username = $_SESSION["username"];
+      // header("Location: Login1.php");
+      // exit();
+    }
+  ?>  
       <!-- header by pandu -->
       <header>
         <div class="nav-bar">
@@ -28,11 +40,21 @@
           <div class="navigation">
             <div class="nav-items">
               <i class="uil uil-times nav-close-btn"></i>
-              <a href="index.html"><i class="uil uil-home"></i>Home</a>
-              <a href="index.html"><i class="uil uil-compass"></i>Destination</a>
+              <a href="index.php"><i class="uil uil-home"></i>Home</a>
+              <a href="index.php"><i class="uil uil-compass"></i>Destination</a>
               <a href="#"><i class="uil uil-document-layout-left"></i>Explore</a>
-              <a href="index.html"><i class="uil uil-info-circle"></i>About Us</a>
-              <a class="loginHeader" href="Login1.html"><i class="uil uil-user"></i>Login</a>
+              <a href="index.php"><i class="uil uil-info-circle"></i>About Us</a>
+              <?php
+              // Cek apakah pengguna sudah login
+              if (isset($_SESSION['username'])) {
+                // Jika sudah login, tampilkan tautan ke profil dan logout
+                echo '<a href="profile.php"><i class="uil uil-user"></i>Profile</a>';
+                echo '<a href="fungsiPHP/check-logout.php"><i class="uil uil-sign-out-alt"></i></i>Logout</a>';
+              } else {
+                // Jika belum login, tampilkan tautan ke halaman login
+                 echo '<a class="loginHeader" href="Login1.php"><i class="uil uil-user"></i>Login</a>';
+              }
+              ?>
             </div>
           </div>
           <i class="uil uil-apps nav-menu-btn"></i>
@@ -80,7 +102,7 @@
     <div class="badan">
       <h1 style="font-size: 50px;">For You Natuna Travel</h1>
       <div class="list"> 
-        <a href="isipaket.html">
+        <a href="isipaket.php">
           <div class="paket">
           
             <div class="hari"><img src="gambar/clock.png" alt=""><span> 3 Hari</span></div>
@@ -91,7 +113,7 @@
             <img class="g3" src="gambar/gbr4.jpg" />
           </div>
         </a>
-        <a href="isipaket.html">
+        <a href="isipaket.php">
           <div class="paket">
           
             <div class="hari"><img src="gambar/clock.png" alt=""><span> 5 Hari</span></div>
@@ -102,7 +124,7 @@
             <img class="g3" src="gambar/gbr3.jpg" />
           </div>
         </a>
-        <a href="isipaket.html">
+        <a href="isipaket.php">
           <div class="paket">
           
             <div class="hari"><img src="gambar/clock.png" alt=""><span> 7 Hari</span></div>
@@ -113,7 +135,7 @@
             <img class="g3" src="gambar/gambar4.jpg" />
           </div>
         </a>
-        <a href="isipaket.html">
+        <a href="isipaket.php">
           <div class="paket">
           
             <div class="hari"><img src="gambar/clock.png" alt=""><span> 4 Hari</span></div>
@@ -124,7 +146,7 @@
             <img class="g3" src="gambar/gbr2.jpg" />
           </div>
         </a>
-        <a href="isipaket.html">
+        <a href="isipaket.php">
           <div class="paket">
           
             <div class="hari"><img src="gambar/clock.png" alt=""><span> 3 Hari</span></div>
@@ -135,7 +157,7 @@
             <img class="g3" src="gambar/gbr3.jpg" />
           </div>
         </a>
-        <a href="isipaket.html">
+        <a href="isipaket.php">
           <div class="paket">
           
             <div class="hari"><img src="gambar/clock.png" alt=""><span> 5 Hari</span></div>
@@ -146,7 +168,7 @@
             <img class="g3" src="gambar/gbr6.jpg" />
           </div>
         </a>
-        <a href="isipaket.html">
+        <a href="isipaket.php">
           <div class="paket">
           
             <div class="hari"><img src="gambar/clock.png" alt=""><span> 6 Hari</span></div>

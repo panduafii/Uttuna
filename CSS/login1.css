@@ -106,7 +106,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('/IMG-Abi/pexels-quang-nguyen-vinh-2131623.jpg');
+    background: url('../IMG-Abi/pexels-quang-nguyen-vinh-2131623.jpg');
     background-size: cover;
     background-position: center;
     overflow: hidden; /* Tambahkan properti ini */

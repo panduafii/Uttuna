@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isi Paket</title>
 
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 
     <link rel="stylesheet" href="./CSS/isipaket.css">
      <!-- import font poppins -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    
+
+     <!-- Icon -->
+       <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
 </head>
 <body>
     <div class="kepala1">
@@ -37,7 +42,7 @@
       <!-- ==== -->
 
     </div>
-    <div class="kepala2">
+    <!-- <div class="kepala2">
         <div id="carouselExampleCaptions" class="carousel slide">
             
             <div class="carousel-indicators">
@@ -75,10 +80,11 @@
           </div>
         <div class="kanan">
 
-        </div>
+        </div> -->
     </div>
     <div class="badan">
-      <h1 style="font-size: 50px;">Jelajahi lebih dalam</h1><br>
+      <!-- <h1 style="font-size: 50px;">Jelajahi lebih dalam</h1><br> -->
+      
       <b>Lokasi: </b>
       Pantai Tanjung, Stone Island, Gunung X<br>
   

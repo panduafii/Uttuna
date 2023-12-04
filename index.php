@@ -276,7 +276,7 @@
       <section id="about2" class="about2 section">
         <div class="containerA">
           <div id="slide">
-            <div class="item" style="background-image: url(/img/gbr1.jpg)">
+            <div class="item" style="background-image: url(img/gbr1.jpg)">
               <div class="content">
                 <div class="name">Pantai Tanjung</div>
                 <div class="des">
@@ -286,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr2.jpg)">
+            <div class="item" style="background-image: url(img/gbr2.jpg)">
               <div class="content">
                 <div class="name">Teluk Buton</div>
                 <div class="des">
@@ -296,7 +296,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr3.jpg)">
+            <div class="item" style="background-image: url(img/gbr3.jpg)">
               <div class="content">
                 <div class="name">Pantai Selo</div>
                 <div class="des">
@@ -306,7 +306,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr4.jpg)">
+            <div class="item" style="background-image: url(img/gbr4.jpg)">
               <div class="content">
                 <div class="name">Batu Kasah</div>
                 <div class="des">
@@ -316,7 +316,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr5.jpg)">
+            <div class="item" style="background-image: url(img/gbr5.jpg)">
               <div class="content">
                 <div class="name">Pulau Senoa</div>
                 <div class="des">
@@ -326,7 +326,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr6.jpg)">
+            <div class="item" style="background-image: url(img/gbr6.jpg)">
               <div class="content">
                 <div class="name">Natuna Dive Resort</div>
                 <div class="des">
@@ -336,7 +336,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr9.jpg)">
+            <div class="item" style="background-image: url(img/gbr9.jpg)">
               <div class="content">
                 <div class="name">Pulau Sahi</div>
                 <div class="des">
@@ -346,7 +346,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr8.jpg)">
+            <div class="item" style="background-image: url(img/gbr8.jpg)">
               <div class="content">
                 <div class="name">Teluk Depeh</div>
                 <div class="des">
@@ -356,7 +356,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr14.jpg)">
+            <div class="item" style="background-image: url(img/gbr14.jpg)">
               <div class="content">
                 <div class="name">Pelabuhan Penagi</div>
                 <div class="des">
@@ -366,7 +366,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr13.jpg)">
+            <div class="item" style="background-image: url(img/gbr13.jpg)">
               <div class="content">
                 <div class="name">Adiwana Resort</div>
                 <div class="des">
@@ -405,7 +405,7 @@
           <!-- About Background -->
           <div class="card-group bg-black">
             <div class="card bg-black text-white">
-              <img src="/img/gbr6.jpg" class="card-img" alt="..." />
+              <img src="img/gbr6.jpg" class="card-img" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Natuna.</h5>
                 <p class="card-text">
@@ -435,7 +435,7 @@
               </div>
             </div>
             <div class="card bg-black text-white">
-              <img src="/img/gbr7.jpg" class="card-img" alt="..." />
+              <img src="img/gbr7.jpg" class="card-img" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Titik Sulit.</h5>
                 <p class="card-text">

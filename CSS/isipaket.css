@@ -78,7 +78,7 @@ header .nav-bar {
 /* ubah di media queries menjadi putih */
 .navigation .nav-items a {
   /* custom */
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 1em;
   font-weight: 500;
   text-decoration: none;

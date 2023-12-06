@@ -404,31 +404,77 @@ header .nav-bar {
 }
 
 .about .cont-about{
-margin-top: 30px;
+margin-top: 200px;
+height: 300px;
 display: inline-flex;
+justify-content: center;
+align-items: center;
 }
-
-.about .cont-about.bawah{
-  margin-top: 50px;
-  display: inline-flex;
-  }
 
 .about .cont-about .petaNatuna{
   background-color: #fff;
   height: auto;
-  width: 270px;
+  width: 600px;
   border-radius: 30px;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.614);
+  margin-top: 40px;
 }
+
+.about .deskAbout {
+  margin-left: 70px;
+  width: 700px;
+  margin-top: 40px;
+  text-align: justify;
+  
+}
+
+.about .deskAbout span {
+  font-weight: 500;
+  font-size: 0.94em;
+  width: 70%;
+  margin-left: 30px;
+  white-space: pre-wrap;
+  letter-spacing: 1px;
+  margin: 25px 0;
+}
+
+.about h2 {
+  margin-top: 50px;
+  margin-left: 1px;
+  font-size: 3.1em;
+
+  font-weight: 600;
+}
+
+.abou .deskAbout {
+  width: 100%; /* Mengubah lebar menjadi 100% pada layar yang lebih kecil */
+  margin-left: 0; /* Menghapus margin kiri pada layar yang lebih kecil */
+}
+
+.abou .deskAbout span {
+  width: 100%; /* Mengubah lebar span menjadi 100% pada layar yang lebih kecil */
+  margin-left: 0; /* Menghapus margin kiri pada layar yang lebih kecil */
+}
+
+
+
+/* .about .cont-about.bawah{
+  margin-top: 50px;
+  height: 300px;
+  display: inline-flex;
+  } */
+
+
 
 .about .cont-about .gambarAbout {
   background-color: rgb(0, 37, 107);
-  height: auto; /* Tinggi latar belakang */
+  height: 282px; /* Tinggi latar belakang */
   width: 270px;
   border-radius: 30px;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.614);
-  background-size: 100% 80%; /* Ukuran latar belakang (tinggi x lebar) */
-  background-repeat: no-repeat;
+  background-size: 270px 282px; /* Ukuran latar belakang (tinggi x lebar) */
+
+  /* background-repeat: no-repeat; */
   background-position: center;
   overflow: hidden; /* Mengatasi masalah overflow */
   display: flex;
@@ -441,6 +487,7 @@ display: inline-flex;
 .about .cont-about .gambarAbout img {
   height: 200px; /* Tinggi gambar di dalam latar belakang */
   width: auto;
+  max-width: 100%;
   display: block; /* Mengatasi margin bawah pada elemen img */
   margin: 0 auto; /* Posisi gambar di tengah */
 }
@@ -454,27 +501,17 @@ display: inline-flex;
 
 
 
-.about h2 {
 
-  font-weight: 600;
-}
 
 .about span {
-  margin: 25px 0;
+  
 }
 
 .about h2 {
-  margin-left: 1px;
-  font-size: 3.1em;
+  
 }
 
-.about span {
-  font-weight: 320;
-  font-size: 0.9em;
-  width: 70%;
-  margin-left: 30px;
-  white-space: pre-wrap;
-}
+
 
 /* ==== Media queries (max-width: 1100px) ==== */
 @media screen and (max-width: 1100px) {
@@ -598,6 +635,64 @@ display: inline-flex;
     font-size: 1.3em;
     margin-right: 5px;
   }
+  .about {
+    height: 100vh;
+    background-color: black;
+    padding-left: 30px;
+    /* scroll-snap-align: start; */
+  }
+  
+  .about .cont-about{
+  margin-top: 30px;
+  height: 300px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+  }
+  
+  .about .cont-about .petaNatuna{
+    background-color: #fff;
+    height: auto;
+    width:370px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.614);
+    margin-left: 300px;
+    margin-top: 60px;
+    
+  }
+  
+  .about .deskAbout {
+    margin-left: 220px;
+    width: 520px;
+    height: 70%;
+    margin-top: 50px;
+    text-align: justify;
+    
+    
+  }
+  
+  .about .deskAbout span {
+    font-weight: 500;
+    font-size: 0.7em;
+    width: 70%;
+    margin-left: 0px;
+    white-space: pre-wrap;
+    letter-spacing: 0.3px;
+    margin: 25px 0;
+    height: 20vh;
+  }
+  
+  .about h2 {
+    margin-top: 20px;
+    margin-left: 1px;
+    font-size: 3.1em;
+  
+    font-weight: 600;
+  }
+  
+  
 }
 
 /* ==== Media queries (max-width: 785px) ==== */
@@ -725,6 +820,67 @@ display: inline-flex;
     display: inline-block;
     font-size: 1.3em;
     margin-right: 5px;
+  }
+
+  /* .about .cont-about span{
+    height: 270px;
+  } */
+  
+  .about {
+    height: 100vh;
+    background-color: black;
+    padding-left: 30px;
+    /* scroll-snap-align: start; */
+  }
+  
+  .about .cont-about{
+  margin-top: 30px;
+  height: 300px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+  }
+  
+  .about .cont-about .petaNatuna{
+    background-color: #fff;
+    height: auto;
+    width:370px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.614);
+    margin-left: 15%;
+    margin-top: 60px;
+    
+  }
+  
+  .about .deskAbout {
+    margin-left: 15%;
+    width: 370px;
+    height: 70%;
+    margin-top: 40px;
+    text-align: justify;
+    
+    
+  }
+  
+  .about .deskAbout span {
+    font-weight: 500;
+    font-size: 0.7em;
+    width: 70%;
+    margin-left: 0px;
+    white-space: pre-wrap;
+    letter-spacing: 0.3px;
+    margin: 25px 0;
+    height: 20vh;
+  }
+  
+  .about h2 {
+    margin-top: 20px;
+    margin-left: 1px;
+    font-size: 3.1em;
+  
+    font-weight: 600;
   }
 }
 

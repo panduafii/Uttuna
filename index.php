@@ -38,6 +38,19 @@
     <title>Document</title>
   </head>
   <body>
+    <?php
+    session_start();
+  
+    // Cek apakah session user_id dan username telah diset
+    if (isset($_SESSION["user_id"]) || isset($_SESSION["username"])) {
+      // Jika tidak, redirect ke halaman login
+      // Informasi pengguna yang telah login
+      $user_id = $_SESSION["user_id"];
+      $username = $_SESSION["username"];
+      // header("Location: Login1.php");
+      // exit();
+    }
+    ?>
     <container>
       <header>
         <div class="nav-bar">
@@ -47,9 +60,19 @@
               <i class="uil uil-times nav-close-btn"></i>
               <a href="#"><i class="uil uil-home"></i>Home</a>
               <a href="#about2"><i class="uil uil-compass"></i>Destination</a>
-              <a href="paket.html"><i class="uil uil-document-layout-left"></i>Explore</a>
+              <a href="paket.php"><i class="uil uil-document-layout-left"></i>Explore</a>
               <a href="#about3"><i class="uil uil-info-circle"></i>About Us</a>
-              <a class="loginHeader" href="Login1.html"><i class="uil uil-user"></i>Login</a>
+              <?php
+              // Cek apakah pengguna sudah login
+              if (isset($_SESSION['username'])) {
+                // Jika sudah login, tampilkan tautan ke profil dan logout
+                echo '<a href="profile.php"><i class="uil uil-user"></i>Profile</a>';
+                echo '<a href="fungsiPHP/check-logout.php"><i class="uil uil-sign-out-alt"></i></i>Logout</a>';
+              } else {
+                // Jika belum login, tampilkan tautan ke halaman login
+                 echo '<a class="loginHeader" href="Login1.php"><i class="uil uil-user"></i>Login</a>';
+              }
+              ?>
             </div>
           </div>
           <i class="uil uil-apps nav-menu-btn"></i>
@@ -74,7 +97,7 @@
                   menyediakan berbagai pilihan untukmu! Kenapa tidak coba ke
                   ujung utara saja? disana ada Natuna
                 </p>
-                <button class="read-btn" onclick="window.location.href='paket.html'">
+                <button class="read-btn" onclick="window.location.href='paket.php'">
                   Lets go <i class="uil uil-arrow-right"></i>
                 </button>
               </div>
@@ -94,7 +117,7 @@
                   sepanjang garis pantai. Natuna tidak hanya destinasi
                   pariwisata, tetapi juga surga yang menanti untuk dijelajahi
                 </p>
-                <button class="read-btn" onclick="window.location.href='paket.html'">
+                <button class="read-btn" onclick="window.location.href='paket.php'">
                   Lets go <i class="uil uil-arrow-right"></i>
                 </button>
               </div>
@@ -112,13 +135,13 @@
                   mencicipi kuliner khas Natuna, yang memadukan cita rasa lezat
                   dengan bahan-bahan segar dari laut dan daratan.
                 </p>
-                <button class="read-btn" onclick="window.location.href='paket.html'">
+                <button class="read-btn" onclick="window.location.href='paket.php'">
                   Lets go <i class="uil uil-arrow-right"></i>
                 </button>
               </div>
             </div>
             <div class="swiper-slide dark-layer">
-              <img src="./images/GambarHome4.png" alt="" />
+              <img src="./images/GambarHome4.png " alt="" />
               <div class="text-content">
                 <h2 class="title">Uttuna<span></span></h2>
                 <p>
@@ -131,7 +154,7 @@
                   langsung dengan alam dan menikmati ketenangan yang sulit
                   ditemukan di tempat lain.
                 </p>
-                <button class="read-btn" onclick="window.location.href='paket.html'">
+                <button class="read-btn" onclick="window.location.href='paket.php'">
                   Lets go <i class="uil uil-arrow-right"></i>
                 </button>
               </div>
@@ -149,7 +172,7 @@
                   satwa liar. Dengan bersatu tangan, kita dapat menjaga Natuna
                   tetap indah untuk generasi mendatang.
                 </p>
-                <button class="read-btn" onclick="window.location.href='paket.html'">
+                <button class="read-btn" onclick="window.location.href='paket.php'">
                   Lets go <i class="uil uil-arrow-right"></i>
                 </button>
               </div>
@@ -167,7 +190,7 @@
                   suasana damai pulau yang menenangkan. Natuna menawarkan
                   liburan yang tak terlupakan bagi semua jenis wisatawan.
                 </p>
-                <button class="read-btn" onclick="window.location.href='paket.html'">
+                <button class="read-btn" onclick="window.location.href='paket.php'">
                   Lets go <i class="uil uil-arrow-right"></i>
                 </button>
               </div>
@@ -180,7 +203,7 @@
                                     repellendus doloribus quisquam iste, nemo culpa corporis debitis quam,
                                     natus quasi tempora sequi amet itaque nulla repudiandae. Eius earum eligendi dolorum!
                                 </p>
-                                <button class="read-btn" action="paket.html">Lets go <i class="uil uil-arrow-right"></i></button>
+                                <button class="read-btn" action="paket.php">Lets go <i class="uil uil-arrow-right"></i></button>
                             </div>
                     </div> -->
             <div class="swiper-slide dark-layer">
@@ -200,7 +223,7 @@
                   tempat yang unik dan semakin terkenal sebagai destinasi wisata
                   penuh inspirasi.
                 </p>
-                <button class="read-btn" onclick="window.location.href='paket.html'">
+                <button class="read-btn" onclick="window.location.href='paket.php'">
                   Lets go <i class="uil uil-arrow-right"></i>
                 </button>
               </div>
@@ -253,7 +276,7 @@
       <section id="about2" class="about2 section">
         <div class="containerA">
           <div id="slide">
-            <div class="item" style="background-image: url(/img/gbr1.jpg)">
+            <div class="item" style="background-image: url(img/gbr1.jpg)">
               <div class="content">
                 <div class="name">Pantai Tanjung</div>
                 <div class="des">
@@ -263,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr2.jpg)">
+            <div class="item" style="background-image: url(img/gbr2.jpg)">
               <div class="content">
                 <div class="name">Teluk Buton</div>
                 <div class="des">
@@ -273,7 +296,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr3.jpg)">
+            <div class="item" style="background-image: url(img/gbr3.jpg)">
               <div class="content">
                 <div class="name">Pantai Selo</div>
                 <div class="des">
@@ -283,7 +306,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr4.jpg)">
+            <div class="item" style="background-image: url(img/gbr4.jpg)">
               <div class="content">
                 <div class="name">Batu Kasah</div>
                 <div class="des">
@@ -293,7 +316,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr5.jpg)">
+            <div class="item" style="background-image: url(img/gbr5.jpg)">
               <div class="content">
                 <div class="name">Pulau Senoa</div>
                 <div class="des">
@@ -303,7 +326,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr6.jpg)">
+            <div class="item" style="background-image: url(img/gbr6.jpg)">
               <div class="content">
                 <div class="name">Natuna Dive Resort</div>
                 <div class="des">
@@ -313,7 +336,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr9.jpg)">
+            <div class="item" style="background-image: url(img/gbr9.jpg)">
               <div class="content">
                 <div class="name">Pulau Sahi</div>
                 <div class="des">
@@ -323,7 +346,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr8.jpg)">
+            <div class="item" style="background-image: url(img/gbr8.jpg)">
               <div class="content">
                 <div class="name">Teluk Depeh</div>
                 <div class="des">
@@ -333,7 +356,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr14.jpg)">
+            <div class="item" style="background-image: url(img/gbr14.jpg)">
               <div class="content">
                 <div class="name">Pelabuhan Penagi</div>
                 <div class="des">
@@ -343,7 +366,7 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url(/img/gbr13.jpg)">
+            <div class="item" style="background-image: url(img/gbr13.jpg)">
               <div class="content">
                 <div class="name">Adiwana Resort</div>
                 <div class="des">
@@ -382,7 +405,7 @@
           <!-- About Background -->
           <div class="card-group bg-black">
             <div class="card bg-black text-white">
-              <img src="/img/gbr6.jpg" class="card-img" alt="..." />
+              <img src="img/gbr6.jpg" class="card-img" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Natuna.</h5>
                 <p class="card-text">
@@ -412,7 +435,7 @@
               </div>
             </div>
             <div class="card bg-black text-white">
-              <img src="/img/gbr7.jpg" class="card-img" alt="..." />
+              <img src="img/gbr7.jpg" class="card-img" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Titik Sulit.</h5>
                 <p class="card-text">
@@ -541,7 +564,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <!-- Js fath -->
-    <script src="/js/destination.js"></script>
+    <script src="js/destination.js"></script>
     <!--  -->
 
     <!-- JS -->

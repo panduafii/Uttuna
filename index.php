@@ -564,7 +564,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <!-- Js fath -->
-    <script src="/js/destination.js"></script>
+    <script src="js/destination.js"></script>
     <!--  -->
 
     <!-- JS -->

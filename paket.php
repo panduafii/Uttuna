@@ -36,7 +36,7 @@
       <!-- header by pandu -->
       <header>
         <div class="nav-bar">
-          <a href="" class="logo"><img src="./img/logo4.png" /></a>
+          <a href="index.php" class="logo"><img src="./img/logo4.png" /></a>
           <div class="navigation">
             <div class="nav-items">
               <i class="uil uil-times nav-close-btn"></i>
@@ -102,90 +102,15 @@
     <div class="badan">
       <h1 style="font-size: 50px;">For You Natuna Travel</h1>
       <div class="list"> 
-        <a href="isipaket.php">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 3 Hari</span></div>
-            <div class="harga"><b>Rp10.000.000</b></div>
-            <div class="lokasi">Pantai Tanjung, Teluk Buton, Pantai Selo</div>
-            <img class="g1" src="gambar/gbr2.jpg" />
-            <img class="g2" src="gambar/gbr3.jpg" />
-            <img class="g3" src="gambar/gbr4.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.php">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 5 Hari</span></div>
-            <div class="harga"><b>Rp5.000.000</b></div>
-            <div class="lokasi">Batu Kasah, Adiwana Resort, Pelabuhan Penangi</div>
-            <img class="g1" src="gambar/gbr6.jpg" />
-            <img class="g2" src="gambar/gbr7.jpg" />
-            <img class="g3" src="gambar/gbr3.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.php">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 7 Hari</span></div>
-            <div class="harga"><b>Rp7.000.000</b></div>
-            <div class="lokasi">Teluk Depeh, Pulau Sahi, Natuna Dive Resort, Pulau Senoa</div>
-            <img class="g1" src="gambar/gbr4.jpg" />
-            <img class="g2" src="gambar/gbr5.jpg" />
-            <img class="g3" src="gambar/gambar4.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.php">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 4 Hari</span></div>
-            <div class="harga"><b>Rp3.500.000</b></div>
-            <div class="lokasi">Teluk Depeh, Batu Kasah, Natuna Dive Resort</div>
-            <img class="g1" src="gambar/gbr5.jpg" />
-            <img class="g2" src="gambar/gambar5.jpg" />
-            <img class="g3" src="gambar/gbr2.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.php">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 3 Hari</span></div>
-            <div class="harga"><b>Rp2.000.000</b></div>
-            <div class="lokasi">Pulau Senoa, Pantai Tanjung, Pelabuhan Pelangi, Batu Kasah</div>
-            <img class="g1" src="gambar/gbr6.jpg" />
-            <img class="g2" src="gambar/gambar6.jpg" />
-            <img class="g3" src="gambar/gbr3.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.php">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 5 Hari</span></div>
-            <div class="harga"><b>Rp8.500.000</b></div>
-            <div class="lokasi">Pantai Selo, Natuna Dive Resort, Pulau Sahi</div>
-            <img class="g1" src="gambar/gbr4.jpg" />
-            <img class="g2" src="gambar/gbr5.jpg" />
-            <img class="g3" src="gambar/gbr6.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.php">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 6 Hari</span></div>
-            <div class="harga"><b>Rp6.000.000</b></div>
-            <div class="lokasi">Stone Park, Adiwana Resort, Pelabuhan Pelangi</div>
-            <img class="g1" src="gambar/gbr5.jpg" />
-            <img class="g2" src="gambar/gbr4.jpg" />
-            <img class="g3" src="gambar/gbr3.jpg" />
-          </div>
-        </a>
-        
+        <?php
+          include('fungsiPHP/check-paket.php')
+        ?>
       </div>
 
     </div>
     <footer>
     </footer>
-    <script src="./js/isipaket.js"></script>
+    <script src="js/isipaket.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

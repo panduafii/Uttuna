@@ -223,7 +223,26 @@
     <footer>
     </footer>
     <div class="overlay" id="overlay"></div>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      // Temukan tombol bayar
+      var btnBayar = document.getElementById('showPopupBtn');
 
+      // Tambahkan event listener untuk menanggapi klik tombol
+      btnBayar.addEventListener('click', function() {
+        // Cek apakah pengguna sudah login
+        <?php if (isset($_SESSION['username'])) : ?>
+          // Jika sudah login, tampilkan pop-up bayar atau lakukan tindakan lainnya
+          // Misalnya, tampilkan pesan sederhana sebagai contoh
+          
+        <?php else : ?>
+          // Jika belum login, arahkan ke halaman login
+          window.location.href = 'Login1.php';
+          alert('Silahkan Login terlebih dahulu');
+        <?php endif; ?>
+      });
+    });
+  </script>
       <div class="popup" id="myPopup">
           <div class="popup-content">
               <span class="close" id="closePopupBtn">&times;</span>
@@ -250,7 +269,7 @@
                       
                   </label><br>
                   <input class="nomor" type="text" placeholder=" nomor"><br>
-                  <input class="sandi" type="text" placeholder=" sandi"><br>
+                  <input class="sandi" type="password" placeholder=" sandi"><br>
                   <select class="jumlahorang" id="jumlah">
                       <option value="1">1 Orang</option>
                       <option value="2">2 Orang</option>

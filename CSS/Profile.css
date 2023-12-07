@@ -23,7 +23,7 @@ body {
     font-size: 100px;
     margin: 0;
     text-transform: uppercase;
-    background-image: url(IMG/pexels-kyle-roxas-2226900.jpg);
+    background-image: url(../IMG/pexels-kyle-roxas-2226900.jpg);
     background-position: center;
     -webkit-background-clip: text;
     background-clip: text;

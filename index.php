@@ -7,10 +7,7 @@
     <link href="CSS/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/destination.css" />
     <link rel="stylesheet" href="./CSS/aboutUs.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
     <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -35,7 +32,7 @@
     />
     <!--Icon  -->
 
-    <title>Document</title>
+    <title>Home</title>
   </head>
   <body>
     <?php
@@ -66,8 +63,8 @@
               // Cek apakah pengguna sudah login
               if (isset($_SESSION['username'])) {
                 // Jika sudah login, tampilkan tautan ke profil dan logout
-                echo '<a href="profile.php"><i class="uil uil-user"></i>Profile</a>';
                 echo '<a href="fungsiPHP/check-logout.php"><i class="uil uil-sign-out-alt"></i></i>Logout</a>';
+                echo '<a class="loginHeader" href="profile.php"><img src="gambar\user.svg">'.$username.'</a>';
               } else {
                 // Jika belum login, tampilkan tautan ke halaman login
                  echo '<a class="loginHeader" href="Login1.php"><i class="uil uil-user"></i>Login</a>';

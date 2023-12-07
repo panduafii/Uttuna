@@ -1,0 +1,264 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* CSS ATAS */
+
+.atas {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 100px;
+  padding-top: 160px;
+}
+
+.atas h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 100px;
+  margin: 0;
+  text-transform: uppercase;
+  background-image: url(../IMG-Abi/pexels-quang-nguyen-vinh-2131623.jpg);
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+/* CSS Bawah */
+.bawah {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 5);
+  padding: 0px 60px;
+  padding-top: 20px;
+}
+
+.bawah .isi {
+  padding-left: 52px;
+}
+
+/* .bawah h4 {
+    font-weight: 200;
+    margin-top: 10px;
+} */
+
+.bawah h1 {
+  font-weight: 500;
+  color: rgb(23, 62, 104);
+  height: 60px;
+  line-height: 60px;
+}
+
+/* Input Form */
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #ebe8e8;
+  margin: 20px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 0.9em;
+  color: #18283539;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #162938;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  line-height: 57px;
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(23, 62, 104);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5 ease;
+}
+
+.button:hover {
+  background: #162938;
+  transition: 0.5 ease;
+}
+
+@media screen and (max-width: 1100px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 160px;
+    padding-bottom: 60px;
+  }
+
+  .atas h1 {
+    font-size: 90px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 180px;
+    padding-bottom: 60px;
+  }
+
+  .atas h1 {
+    font-size: 80px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 190px;
+    padding-bottom: 60px;
+  }
+
+  .atas h1 {
+    font-size: 70px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 190px;
+    padding-bottom: 60px;
+  }
+
+  .atas h1 {
+    font-size: 70px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 190px;
+    padding-bottom: 60px;
+  }
+
+  .atas h1 {
+    font-size: 65px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 220px;
+    padding-bottom: 60px;
+  }
+
+  .atas h1 {
+    font-size: 60px;
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .atas h1 {
+    font-size: 60px;
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 220px;
+    padding-bottom: 60px;
+  }
+
+  .atas h1 {
+    font-size: 60px;
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 200px;
+    padding-bottom: 30px;
+  }
+
+  .atas h1 {
+    font-size: 60px;
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 200px;
+    padding-bottom: 30px;
+  }
+
+  .atas h1 {
+    font-size: 55px;
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .atas {
+    padding: 0px 20px;
+    padding-top: 200px;
+    padding-bottom: 30px;
+  }
+
+  .atas h1 {
+    font-size: 55px;
+    padding: 0px 10px;
+  }
+
+  .bawah h1 {
+    font-size: 20px;
+  }
+}

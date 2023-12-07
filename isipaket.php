@@ -108,7 +108,11 @@
     <div class="badan">
       <!-- <h1 style="font-size: 50px;">Jelajahi lebih dalam</h1><br> -->
       
-      <b>Lokasi: </b>
+      <?php
+        include('fungsiPHP/check_isipaket.php')
+      ?>
+
+      <!-- <b>Lokasi: </b>
       Pantai Tanjung, Stone Island, Gunung X<br>
   
       <b>Durasi Berkunjung: </b>
@@ -140,7 +144,9 @@
           </table><br>
         </div>
         <b>Jam Operasional: </b>
-        <span>24 jam</span><br><br><br><br><br>
+        <span>24 jam</span><br><br>
+        <img class="gambardest" src="img/gbr10.jpg" alt="">
+        <br><br><br><br>
       </div>
       
       <div class="destinasi">
@@ -181,7 +187,7 @@
           diambil dari bahasa "Selow" sangat cocok buat kamu yang butuh
           selow and chill. Pantai Selo di Natuna adalah sebuah surga tropis yang memukau pengunjung dengan kecantikan alamnya yang luar biasa. 
           Terletak di tengah-tengah keindahan Kepulauan Natuna, pantai ini menawarkan pengalaman liburan yang unik dan tak terlupakan.
-</p>
+        </p>
         <div class="fasilitas">
           <b>Fasilitas yang tersedia: </b>
           <table>
@@ -203,17 +209,17 @@
         </div>
         <b>Jam Operasional: </b>
         <span>24 jam</span><br><br><br><br><br>
-      </div>
+      </div> -->
       
       
-      <div class="harga">
+      <!-- <div class="harga">
         <b>Rp. 5.000.000</b>
         <button id="showPopupBtn"><b>Checkout</b><img src="gambar/check-it-out.png" alt=""></button>
-      </div>
+      </div> -->
       
         
     
-    </div>
+    </div> 
     <footer>
     </footer>
     <div class="overlay" id="overlay"></div>
@@ -257,11 +263,15 @@
                       <option value="9">9 Orang</option>
                       <option value="10">10 Orang</option>
                   </select>
-                  <span class="harga2"><b>Rp5.000.000</b></span>
+                  <span class="harga2">
+                    <?php
+                      echo '<b>Rp. ' . number_format($row["harga_paket"]) . '</b>';
+                    ?>
+                  </span>
                   <button class="tombol"><b>Bayar</b> <img src="/gambar/wallet.png" alt=""></button>
               </form>
           </div>
-      </div>
+      </div> 
 
     <script src="./js/isipaket.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

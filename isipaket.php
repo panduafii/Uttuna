@@ -244,7 +244,7 @@
                       
                   </label><br>
                   <input class="nomor" type="text" placeholder=" nomor"><br>
-                  <input class="sandi" type="text" placeholder=" sandi"><br>
+                  <input class="sandi" type="password" placeholder=" sandi"><br>
                   <select class="jumlahorang" id="jumlah">
                       <option value="1">1 Orang</option>
                       <option value="2">2 Orang</option>

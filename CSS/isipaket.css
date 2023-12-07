@@ -173,6 +173,11 @@ h2 {
   height: 30px;
   filter: invert(100%);
 }
+ .destinasi .gambardest{
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
 .badan .harga {
   width: 100%;
   text-align: right;

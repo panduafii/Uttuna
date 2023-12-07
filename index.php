@@ -7,10 +7,7 @@
     <link href="CSS/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/destination.css" />
     <link rel="stylesheet" href="./CSS/aboutUs.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
     <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"

@@ -11,25 +11,6 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<<<<<<< HEAD
-    
-</head>
-<body>
-    
-      <!-- header by pandu -->
-      <header>
-        <div class="nav-bar">
-          <a href="" class="logo"><img src="./img/logo4.png" /></a>
-          <div class="navigation">
-            <div class="nav-items">
-              <i class="uil uil-times nav-close-btn"></i>
-              <a href="index.html"><i class="uil uil-home"></i>Home</a>
-              <a href="index.html"><i class="uil uil-compass"></i>Destination</a>
-              <a href="#"><i class="uil uil-document-layout-left"></i>Explore</a>
-              <a href="index.html"><i class="uil uil-info-circle"></i>About Us</a>
-              <a class="loginHeader" href="Login1.html"><i class="uil uil-user"></i>Login</a>
-=======
-
      <!-- Icon -->
      <link
       rel="stylesheet"
@@ -73,7 +54,6 @@
                  echo '<a class="loginHeader" href="Login1.php"><i class="uil uil-user"></i>Login</a>';
               }
               ?>
->>>>>>> 2b2a020549bdc070e3bca56b1aaee55b01203e1a
             </div>
           </div>
           <i class="uil uil-apps nav-menu-btn"></i>
@@ -121,100 +101,15 @@
     <div class="badan">
       <h1 style="font-size: 50px;">For You Natuna Travel</h1>
       <div class="list"> 
-<<<<<<< HEAD
-        <a href="isipaket.html">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 3 Hari</span></div>
-            <div class="harga"><b>Rp10.000.000</b></div>
-            <div class="lokasi">Pantai Tanjung, Teluk Buton, Pantai Selo</div>
-            <img class="g1" src="gambar/gbr2.jpg" />
-            <img class="g2" src="gambar/gbr3.jpg" />
-            <img class="g3" src="gambar/gbr4.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.html">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 5 Hari</span></div>
-            <div class="harga"><b>Rp5.000.000</b></div>
-            <div class="lokasi">Batu Kasah, Adiwana Resort, Pelabuhan Penangi</div>
-            <img class="g1" src="gambar/gbr6.jpg" />
-            <img class="g2" src="gambar/gbr7.jpg" />
-            <img class="g3" src="gambar/gbr3.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.html">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 7 Hari</span></div>
-            <div class="harga"><b>Rp7.000.000</b></div>
-            <div class="lokasi">Teluk Depeh, Pulau Sahi, Natuna Dive Resort, Pulau Senoa</div>
-            <img class="g1" src="gambar/gbr4.jpg" />
-            <img class="g2" src="gambar/gbr5.jpg" />
-            <img class="g3" src="gambar/gambar4.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.html">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 4 Hari</span></div>
-            <div class="harga"><b>Rp3.500.000</b></div>
-            <div class="lokasi">Teluk Depeh, Batu Kasah, Natuna Dive Resort</div>
-            <img class="g1" src="gambar/gbr5.jpg" />
-            <img class="g2" src="gambar/gambar5.jpg" />
-            <img class="g3" src="gambar/gbr2.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.html">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 3 Hari</span></div>
-            <div class="harga"><b>Rp2.000.000</b></div>
-            <div class="lokasi">Pulau Senoa, Pantai Tanjung, Pelabuhan Pelangi, Batu Kasah</div>
-            <img class="g1" src="gambar/gbr6.jpg" />
-            <img class="g2" src="gambar/gambar6.jpg" />
-            <img class="g3" src="gambar/gbr3.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.html">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 5 Hari</span></div>
-            <div class="harga"><b>Rp8.500.000</b></div>
-            <div class="lokasi">Pantai Selo, Natuna Dive Resort, Pulau Sahi</div>
-            <img class="g1" src="gambar/gbr4.jpg" />
-            <img class="g2" src="gambar/gbr5.jpg" />
-            <img class="g3" src="gambar/gbr6.jpg" />
-          </div>
-        </a>
-        <a href="isipaket.html">
-          <div class="paket">
-          
-            <div class="hari"><img src="gambar/clock.png" alt=""><span> 6 Hari</span></div>
-            <div class="harga"><b>Rp6.000.000</b></div>
-            <div class="lokasi">Stone Park, Adiwana Resort, Pelabuhan Pelangi</div>
-            <img class="g1" src="gambar/gbr5.jpg" />
-            <img class="g2" src="gambar/gbr4.jpg" />
-            <img class="g3" src="gambar/gbr3.jpg" />
-          </div>
-        </a>
-        
-=======
         <?php
           include('fungsiPHP/check-paket.php')
         ?>
->>>>>>> 2b2a020549bdc070e3bca56b1aaee55b01203e1a
       </div>
 
     </div>
     <footer>
     </footer>
-<<<<<<< HEAD
-    <script src="./js/isipaket.js"></script>
-=======
     <script src="js/isipaket.js"></script>
->>>>>>> 2b2a020549bdc070e3bca56b1aaee55b01203e1a
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

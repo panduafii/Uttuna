@@ -17,6 +17,18 @@
 </head>
 
 <body>
+    <?php
+    session_start();
+  
+    // Cek apakah session user_id dan username telah diset
+    if (isset($_SESSION["user_id"]) || isset($_SESSION["username"])) {
+      
+      // Informasi pengguna yang telah login
+      $user_id = $_SESSION["user_id"];
+      $username = $_SESSION["username"];
+    }
+    include("fungsiPHP/check-profile.php");
+    ?>
     <!-- Atas -->
     <div class="atas">
         <h1>WONDERFUL NATUNA</h1>
@@ -29,35 +41,35 @@
         </div>
         <div class="isi">
             <!-- <h4><ion-icon name="create"></ion-icon> Edit your profile</h4> -->
-            <form action="#">
+            <form action="fungsiPHP/update-profile.php" method="post">
                 <!-- Input Form -->
                 <!-- Username -->
                 <div class="input-box">
                     <span class="icon"><ion-icon name="people"></ion-icon></span>
-                    <input type="text" required>
+                    <input type="text" id="username" name="username" value="<?php echo $uname; ?>" required>
                     <label for="username">Username</label>
                 </div>
 
                 <!-- Phone -->
                 <div class="input-box">
                     <span class="icon"><ion-icon name="call"></ion-icon></span>
-                    <input type="phone" required>
+                    <input type="tel" id="phone" name="phone" value="<?php echo $phone; ?>" required>
                     <label for="phone">Phone Number</label>
                 </div>
 
                 <!-- Email -->
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="email" id="email" name="email" value="<?php echo $eml; ?>" required>
                     <label for="email">Email</label>
                 </div>
 
                 <!-- Password -->
-                <div class="input-box">
+                <!-- <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="Password" required>
+                    <input type="password" id="password" name="password" value="<?php echo $pwd; ?>" required>
                     <label for="Password">Password</label>
-                </div>
+                </div> -->
 
                 <!-- Submit Button -->
                 <button type="submit" class="button">Save Changes</button>

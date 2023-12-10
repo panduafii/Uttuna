@@ -94,6 +94,7 @@ section {
 }
 
 /* ==== Header ==== */
+/* copy */
 header {
   z-index: 999;
   position: fixed;
@@ -197,6 +198,8 @@ header .nav-bar {
 .navigation .nav-items a:not(:last-child) {
   margin-right: 25px;
 }
+/* akhir copy-an */
+/* jangan lupa media-queriesnya */
 
 /* ==== Home ==== */
 .home {
@@ -508,6 +511,7 @@ header .nav-bar {
 .about h2 {
 }
 
+/* dari sini sampai habis, intinya yang berhubungan dengan komponen css header diatas */
 @media screen and (max-width: 1633px){
   .about {
     height: 100vh;

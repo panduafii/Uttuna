@@ -649,6 +649,16 @@ header .nav-bar {
     margin-left: 48px;
   }
 
+  /* Jarak icon dan output nama pengguna */
+  .namaPengguna{
+  padding-left: 37px;
+  } 
+  
+
+  .buatJarak{
+    margin-left: 20px;
+  }
+
 
 
   .navigation.active .nav-items {

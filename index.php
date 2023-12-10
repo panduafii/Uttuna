@@ -33,11 +33,12 @@
   
     // Cek apakah session user_id dan username telah diset
     if (isset($_SESSION["user_id"]) || isset($_SESSION["username"])) {
-      
+      // Jika tidak, redirect ke halaman login
       // Informasi pengguna yang telah login
       $user_id = $_SESSION["user_id"];
       $username = $_SESSION["username"];
-      
+      // header("Location: Login1.php");
+      // exit();
     }
     ?>
     <container>
@@ -56,7 +57,7 @@
               if (isset($_SESSION['username'])) {
                 // Jika sudah login, tampilkan tautan ke profil dan logout
                 echo '<a href="fungsiPHP/check-logout.php"><i class="uil uil-sign-out-alt"></i></i>Logout</a>';
-                echo '<a class="loginHeader" href="profile.php"><img src="gambar\user.svg">'.$username.'</a>';
+                echo '<a class="loginHeader buatJarak" href="profile.php"><img src="gambar\user.svg"><span class="namaPengguna">'.$username.'</span></a>';
               } else {
                 // Jika belum login, tampilkan tautan ke halaman login
                  echo '<a class="loginHeader" href="Login1.php"><i class="uil uil-user"></i>Login</a>';

@@ -28,6 +28,7 @@ body {
 }
 
 /* css header by pandu */
+/* copy */
 header {
   z-index: 999;
   position: fixed;
@@ -96,12 +97,8 @@ header .nav-bar {
 
 /* ubah di media queries menjadi putih */
 .navigation .nav-items a {
-  /* custom */
-
-  color: white;
-
+  color: var(--white-color);
   font-size: 1em;
-  font-weight: 500;
   text-decoration: none;
   text-shadow: var(--text-shadow);
   cursor: pointer;
@@ -110,6 +107,14 @@ header .nav-bar {
 }
 .navigation .nav-items .loginHeader uil uil-user {
   display: block;
+}
+
+.navigation .nav-items .loginHeader img{
+  width: 20px !important;
+  height: auto !important;
+  filter: invert(1);
+  padding-bottom: 5px;
+  margin-right: 10px;
 }
 
 .navigation .nav-items a:hover {
@@ -127,6 +132,7 @@ header .nav-bar {
 .navigation .nav-items a:not(:last-child) {
   margin-right: 25px;
 }
+/* akhir copy-an */
 /* ========== */
 .kepala2 img {
   width: 100%;

@@ -8,7 +8,7 @@
     <!-- bootstrap
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" href="./CSS/isipaket.css">
+    <link href="CSS/isipaket.css" rel="stylesheet" >
      <!-- import font poppins -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,7 @@
               if (isset($_SESSION['username'])) {
                 // Jika sudah login, tampilkan tautan ke profil dan logout
                 echo '<a href="fungsiPHP/check-logout.php"><i class="uil uil-sign-out-alt"></i></i>Logout</a>';
-                echo '<a class="loginHeader buatJarak" href="profile.php"><img src="gambar\user.svg"><span class="namaPengguna">'.$username.'</span></a>';
+                echo '<a class="loginHeader" href="profile.php"><img src="gambar\user.svg"><span class="namaPengguna">'.$username.'</span></a>';
               } else {
                 // Jika belum login, tampilkan tautan ke halaman login
                  echo '<a class="loginHeader" href="Login1.php"><i class="uil uil-user"></i>Login</a>';

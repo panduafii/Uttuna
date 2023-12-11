@@ -28,7 +28,8 @@ body {
 }
 /* ============= */
 
-/* css header by pandu */
+/* ==== Header ==== */
+/* copy */
 header {
   z-index: 999;
   position: fixed;
@@ -97,10 +98,8 @@ header .nav-bar {
 
 /* ubah di media queries menjadi putih */
 .navigation .nav-items a {
-  /* custom */
-  color: black;
+  color: var(--white-color);
   font-size: 1em;
-  font-weight: 500;
   text-decoration: none;
   text-shadow: var(--text-shadow);
   cursor: pointer;
@@ -109,6 +108,14 @@ header .nav-bar {
 }
 .navigation .nav-items .loginHeader uil uil-user {
   display: block;
+}
+
+.loginHeader img{
+  width: 20px;
+  height: auto;
+  filter: invert(1);
+  padding-bottom: 5px;
+  margin-right: 10px;
 }
 
 .navigation .nav-items a:hover {
@@ -126,6 +133,7 @@ header .nav-bar {
 .navigation .nav-items a:not(:last-child) {
   margin-right: 25px;
 }
+/* akhir copy-an */
 /* ========== */
 .kepala2 {
   border-radius: 10px;
@@ -234,7 +242,9 @@ footer {
   color: black;
   text-align: center;
 }
-@media screen and (max-width: 1100px) {
+
+
+@media screen and (max-width: 1130px) {
   header .nav-bar {
     padding: 0 50px;
   }
@@ -313,6 +323,22 @@ footer {
     transition: 0.3s ease;
   }
 
+  .loginHeader img{
+    margin-left: 48px;
+  }
+
+  /* Jarak icon dan output nama pengguna */
+  .namaPengguna{
+  padding-left: 37px;
+  } 
+  
+
+  .buatJarak{
+    margin-left: 20px;
+  }
+
+
+
   .navigation.active .nav-items {
     transform: translateY(0);
   }
@@ -354,6 +380,58 @@ footer {
     display: inline-block;
     font-size: 1.3em;
     margin-right: 5px;
+  }
+  .about {
+    height: 100vh;
+    background-color: black;
+    padding-left: 30px;
+    /* scroll-snap-align: start; */
+  }
+
+  .about .cont-about {
+    margin-top: 30px;
+    height: 300px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .about .cont-about .petaNatuna {
+    background-color: #fff;
+    height: auto;
+    width: 370px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.614);
+    margin-left: 30%;
+    margin-top: 60px;
+  }
+
+  .about .deskAbout {
+    margin-left: 30%;
+    width: 370px;
+    height: 70%;
+    margin-top: 50px;
+    text-align: justify;
+  }
+
+  .about .deskAbout span {
+    font-weight: 500;
+    font-size: 0.7em;
+    width: 70%;
+    margin-left: 0px;
+    white-space: pre-wrap;
+    letter-spacing: 0.3px;
+    margin: 25px 0;
+    height: 20vh;
+  }
+
+  .about h2 {
+    margin-top: 20px;
+    margin-left: 1px;
+    font-size: 3.1em;
+
+    font-weight: 600;
   }
 }
 

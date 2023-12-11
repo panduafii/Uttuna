@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+
+
 :root {
   --white-color: #fff;
   --dark-color: #222;
@@ -28,6 +30,8 @@ body {
 }
 
 /* css header by pandu */
+/* ==== Header ==== */
+/* copy */
 header {
   z-index: 999;
   position: fixed;
@@ -96,12 +100,8 @@ header .nav-bar {
 
 /* ubah di media queries menjadi putih */
 .navigation .nav-items a {
-  /* custom */
-
-  color: white;
-
+  color: var(--white-color);
   font-size: 1em;
-  font-weight: 500;
   text-decoration: none;
   text-shadow: var(--text-shadow);
   cursor: pointer;
@@ -110,6 +110,15 @@ header .nav-bar {
 }
 .navigation .nav-items .loginHeader uil uil-user {
   display: block;
+}
+
+.loginHeader img{
+  width: 20px;
+  height: auto;
+  filter: invert(1);
+  padding-bottom: 0px;
+  margin-right: 10px;
+  margin-bottom: -3px;
 }
 
 .navigation .nav-items a:hover {
@@ -127,6 +136,7 @@ header .nav-bar {
 .navigation .nav-items a:not(:last-child) {
   margin-right: 25px;
 }
+/* akhir copy-an */
 /* ========== */
 .kepala2 img {
   width: 100%;
@@ -292,7 +302,7 @@ select {
   font-size: 20px;
   cursor: pointer;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   header .nav-bar {
     padding: 0 50px;
   }
@@ -404,6 +414,11 @@ select {
     padding: 5px 15px;
   }
 
+  .loginHeader img{
+    margin-left: 52px;
+    padding-right: 31px;
+  }
+
   /* .navigation .nav-items a i{
         color: var(--dark-color);
     } */
@@ -413,6 +428,7 @@ select {
     font-size: 1.3em;
     margin-right: 5px;
   }
+
 }
 
 /* ==== Media queries (max-width: 785px) ==== */

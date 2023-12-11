@@ -3,7 +3,7 @@
 //Inisiasi nilai-nilai paramater koneksi
 $namaServer = "localhost"; // isikan sesuai nama server Anda
 $namaPengguna = "root"; //isikan sesuai nama pengguna Basisdata Anda
-$password = ""; //isikan sesuai password Anda
+$password = "root"; //isikan sesuai password Anda
 $nama_db = "uttuna";
 //Membuat koneksi
 $conn = new mysqli($namaServer, $namaPengguna, $password, $nama_db);

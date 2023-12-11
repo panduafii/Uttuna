@@ -51,7 +51,7 @@
               if (isset($_SESSION['username'])) {
                 // Jika sudah login, tampilkan tautan ke profil dan logout
                 echo '<a href="fungsiPHP/check-logout.php"><i class="uil uil-sign-out-alt"></i></i>Logout</a>';
-                echo '<a class="loginHeader" href="profile.php"><img src="gambar\user.svg"><span class="namaPengguna">'.$username.'</span></a>';
+                echo '<a class="loginHeader buatJarak" href="profile.php"><img src="gambar\user.svg"><span class="namaPengguna">'.$username.'</span></a>';
               } else {
                 // Jika belum login, tampilkan tautan ke halaman login
                  echo '<a class="loginHeader" href="Login1.php"><i class="uil uil-user"></i>Login</a>';

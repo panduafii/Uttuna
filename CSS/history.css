@@ -46,10 +46,6 @@ header {
   justify-content: center;
   transition: 1.5s ease;
   transition-property: height, background;
-
-  /* custom */
-  -webkit-backdrop-filter: blur(80px);
-  backdrop-filter: blur(80px);
 }
 
 header.sticky {
@@ -96,8 +92,7 @@ header .nav-bar {
 }
 
 .nav-bar .logo {
-  color: black;
-
+  color: var(--dark-color);
   font-size: 1.8em;
   font-weight: 600;
   letter-spacing: 2px;
@@ -109,17 +104,23 @@ header .nav-bar {
 /* ubah di media queries menjadi putih */
 .navigation .nav-items a {
   color: var(--white-color);
-
   font-size: 1em;
   text-decoration: none;
   text-shadow: var(--text-shadow);
   cursor: pointer;
   transform: translateY(0);
   transition: 0.3s ease;
-  color: #000000;
 }
 .navigation .nav-items .loginHeader uil uil-user {
   display: block;
+}
+
+.loginHeader img{
+  width: 20px;
+  height: auto;
+  filter: invert(1);
+  padding-bottom: 5px;
+  margin-right: 10px;
 }
 
 .navigation .nav-items a:hover {

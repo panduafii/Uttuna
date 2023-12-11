@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Des 2023 pada 08.00
+-- Waktu pembuatan: 11 Des 2023 pada 20.24
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -107,7 +107,28 @@ CREATE TABLE `pengguna` (
 --
 
 INSERT INTO `pengguna` (`id_pengguna`, `username`, `email`, `password`, `fotoprofil_pengguna`, `notelp_pengguna`) VALUES
-(10, 'admin', 'admin@email.com', '$2y$10$8qA5ZPe8HSWtWGPxrwuFgu.dtv.3Cuiiln27wNJzsncACnBnzqjN2', '', '0812345');
+(10, 'admin', 'admin@email.com', '$2y$10$8qA5ZPe8HSWtWGPxrwuFgu.dtv.3Cuiiln27wNJzsncACnBnzqjN2', '', '0812345'),
+(11, 'rknarya', 'rakeenaria@email.com', '$2y$10$rWyLp.ksMcQfFZf97UW7ZugnI62jAHta4vLMjs5QcsgOpOcrbqbpu', '', '087777777777'),
+(12, 'pandu', 'pandu@email.com', '$2y$10$.Nj8Sn7pn2fLNwgJc2v3RuXk/ucAB1I1ePEoAuGSKS5lrYS1/k3em', '', '085555555555');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `riwayat_pemesanan`
+--
+
+CREATE TABLE `riwayat_pemesanan` (
+  `id_riwayat` int(11) NOT NULL,
+  `id_paket` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `riwayat_pemesanan`
+--
+
+INSERT INTO `riwayat_pemesanan` (`id_riwayat`, `id_paket`) VALUES
+(9, 1),
+(4, 4);
 
 --
 -- Indexes for dumped tables
@@ -137,6 +158,13 @@ ALTER TABLE `pengguna`
   ADD PRIMARY KEY (`id_pengguna`);
 
 --
+-- Indeks untuk tabel `riwayat_pemesanan`
+--
+ALTER TABLE `riwayat_pemesanan`
+  ADD PRIMARY KEY (`id_riwayat`),
+  ADD KEY `id_paket` (`id_paket`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -156,7 +184,13 @@ ALTER TABLE `paket_wisata`
 -- AUTO_INCREMENT untuk tabel `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT untuk tabel `riwayat_pemesanan`
+--
+ALTER TABLE `riwayat_pemesanan`
+  MODIFY `id_riwayat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
@@ -171,6 +205,12 @@ ALTER TABLE `paket_wisata`
   ADD CONSTRAINT `paket_wisata_ibfk_3` FOREIGN KEY (`destinasi3`) REFERENCES `destinasi` (`id_destinasi`),
   ADD CONSTRAINT `paket_wisata_ibfk_4` FOREIGN KEY (`destinasi4`) REFERENCES `destinasi` (`id_destinasi`),
   ADD CONSTRAINT `paket_wisata_ibfk_5` FOREIGN KEY (`destinasi5`) REFERENCES `destinasi` (`id_destinasi`);
+
+--
+-- Ketidakleluasaan untuk tabel `riwayat_pemesanan`
+--
+ALTER TABLE `riwayat_pemesanan`
+  ADD CONSTRAINT `riwayat_pemesanan_ibfk_1` FOREIGN KEY (`id_paket`) REFERENCES `paket_wisata` (`id_paket`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

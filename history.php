@@ -22,6 +22,19 @@
     <!--  -->
 </head>
 <body>
+<?php
+    session_start();
+  
+    // Cek apakah session user_id dan username telah diset
+    if (isset($_SESSION["user_id"]) || isset($_SESSION["username"])) {
+      // Jika tidak, redirect ke halaman login
+      // Informasi pengguna yang telah login
+      $user_id = $_SESSION["user_id"];
+      $username = $_SESSION["username"];
+      // header("Location: Login1.php");
+      // exit();
+    }
+    ?>
     <!-- header by pandu -->
       <header>
         <div class="nav-bar">
@@ -65,12 +78,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td> 1 </td>
-                        <td> 7.000.000 </td>
-                        <td> Pantai Tanjung, Natuna Dive Resort </td>
-                        <TD><button> Delete</button></TD>
-                    </tr>
+                  <?php
+                    include "fungsiPHP/check-history.php"
+                  ?>
                 </tbody>
             </table>
     </main>

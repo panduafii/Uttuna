@@ -10,6 +10,7 @@
 
     
 
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,6 +74,7 @@
     <!-- Bawah -->
     <div class="bawah">
         <div class="header">
+            <a href="history.php"> <button><i class="uil uil-history"></i>View History</button></a>
             <h1><ion-icon name="person"></ion-icon> Account Settings</h1>
         </div>
         <div class="isi">
@@ -99,6 +101,7 @@
                     <input type="email" id="email" name="email" value="<?php echo $eml; ?>" required>
                     <label for="email">Email</label>
                 </div>
+
 
                 <!-- Password -->
                 <!-- <div class="input-box">

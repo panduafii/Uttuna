@@ -38,7 +38,7 @@
       <!-- header by pandu -->
       <header>
         <div class="nav-bar">
-          <a href="index.php" class="logo"><img src="./img/logo4.png" /></a>
+          <a href="" class="logo"><img src="./img/logo4.png" /></a>
           <div class="navigation">
             <div class="nav-items">
               <i class="uil uil-times nav-close-btn"></i>
@@ -50,8 +50,8 @@
               // Cek apakah pengguna sudah login
               if (isset($_SESSION['username'])) {
                 // Jika sudah login, tampilkan tautan ke profil dan logout
-                echo '<a href="profile.php"><i class="uil uil-user"></i>Profile</a>';
                 echo '<a href="fungsiPHP/check-logout.php"><i class="uil uil-sign-out-alt"></i></i>Logout</a>';
+                echo '<a class="loginHeader buatJarak" href="profile.php"><img src="gambar\user.svg"><span class="namaPengguna">'.$username.'</span></a>';
               } else {
                 // Jika belum login, tampilkan tautan ke halaman login
                  echo '<a class="loginHeader" href="Login1.php"><i class="uil uil-user"></i>Login</a>';

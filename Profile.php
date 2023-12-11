@@ -36,9 +36,10 @@
     include("fungsiPHP/check-profile.php");
     ?>
     <!-- header by pandu -->
-    <header>
-        <div class="nav-bar">
-          <a href="" class="logo"><img src="./img/logo4.png" /></a>
+      <header>
+      <div class="nav-bar">
+          <a href="" class="logo"><img src="./img/logo5.png" /></a>
+
           <div class="navigation">
             <div class="nav-items">
               <i class="uil uil-times nav-close-btn"></i>

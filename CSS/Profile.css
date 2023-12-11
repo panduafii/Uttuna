@@ -108,7 +108,7 @@ header .nav-bar {
   display: block;
 }
 
-.loginHeader img{
+.loginHeader img {
   width: 20px;
   height: auto;
   filter: invert(1);
@@ -168,6 +168,15 @@ header .nav-bar {
   box-shadow: 0 0 30px rgba(0, 0, 0, 5);
   padding: 0px 60px;
   padding-top: 20px;
+}
+.header button {
+  border-radius: 10px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: orange;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .bawah .isi {
@@ -410,21 +419,18 @@ header .nav-bar {
     transition: 0.3s ease;
   }
 
-  .loginHeader img{
+  .loginHeader img {
     margin-left: 48px;
   }
 
   /* Jarak icon dan output nama pengguna */
-  .namaPengguna{
-  padding-left: 37px;
-  } 
-  
-
-  .buatJarak{
-    margin-left: 20px;
+  .namaPengguna {
+    padding-left: 37px;
   }
 
-
+  .buatJarak {
+    margin-left: 20px;
+  }
 
   .navigation.active .nav-items {
     transform: translateY(0);

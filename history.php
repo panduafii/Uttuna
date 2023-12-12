@@ -6,7 +6,7 @@
     <title>History</title>
 
     <!-- CSS -->
-    <link href="CSS/history.css" rel="stylesheet" >
+    <link href="CSS/History.css" rel="stylesheet" >
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

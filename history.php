@@ -6,7 +6,7 @@
     <title>History</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/history.css">
+    <link href="CSS/history.css" rel="stylesheet" >
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +37,8 @@
     ?>
     <!-- header by pandu -->
     <header>
-      <div class="nav-bar">
-          <a href="" class="logo"><img src="./img/logo5.png" /></a>
-
+        <div class="nav-bar">
+          <a href="" class="logo"><img src="./img/logo4.png" /></a>
           <div class="navigation">
             <div class="nav-items">
               <i class="uil uil-times nav-close-btn"></i>
